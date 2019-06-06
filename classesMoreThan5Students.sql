@@ -32,4 +32,4 @@ The students should not be counted duplicate in each course. */
 SELECT DISTINCT sub.class
 FROM (SELECT *, DENSE_RANK() OVER(PARTITION BY class ORDER BY student ) rank
      FROM courses ) sub
-WHERE sub.rank >=5;     
+WHERE sub.rank >=5;      
