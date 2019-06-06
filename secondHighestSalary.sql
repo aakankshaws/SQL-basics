@@ -18,5 +18,5 @@ For example, given the above Employee table, the query should return 200 as the 
 
 SELECT max(sub.salary) AS  SecondHighestSalary
 FROM (select *,  RANK() OVER(ORDER BY salary desc) AS rank
-     FROM Employee) sub
+     FROM Employee) sub 
 WHERE sub.rank = 2;   
