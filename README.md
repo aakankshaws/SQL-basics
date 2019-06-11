@@ -1,2 +1,2 @@
 # SQL-basics
-problems from leetcode
+problems from leetcode and hackerrank
